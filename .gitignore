@@ -2,3 +2,4 @@ venv/
 .env
 dados/
 exploracao_dos_dados/
+relatorios/

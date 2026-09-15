@@ -5,22 +5,22 @@ Um sistema autônomo de Engenharia de Dados e Inteligência Artificial desenvolv
 ---
 
 ## 📂 Base de Dados Utilizada
-O projeto processa o dataset público **eCommerce Behavior Data from Multi Category Store** (disponibilizado pela *REES46* no Kaggle).
-* **Volume:** ~67 milhões de registros de eventos de navegação e consumo.
-* **Escopo:** Dados comportamentais incluindo visualizações de produtos (view), adições ao carrinho (cart) e compras finalizadas (purchase), com preços, marcas e categorias.
+O projeto processa o dataset público eCommerce Behavior Data from Multi Category Store (disponibilizado pela REES46 no Kaggle).
+- Volume: ~67 milhões de registros de eventos de navegação e consumo.
+- Escopo: Dados comportamentais incluindo visualizações de produtos (view), adições ao carrinho (cart) e compras finalizadas (purchase), com preços, marcas e categorias.
 
 ---
 
 ## 🚀 O Problema & A Solução
-Painéis de BI tradicionais são estáticos e limitados a perguntas pré-programadas. Este projeto implementa um Agente Analista Autônomo capaz de receber perguntas de negócio em linguagem natural, inspecionar o esquema do banco de dados, escrever, executar e auto-corrigir consultas SQL em tempo real, gerando relatórios executivos transparentes.
+Painéis de BI tradicionais são estáticos e limitados a perguntas pré-programadas. Este projeto implementa um Agente Analista Autônomo capaz de receber perguntas de negócio em linguagem natural, inspecionar o esquema do banco de dados, escrever, executar e auto-corrigir consultas SQL em tempo real, gerando relatórios executivos transparentes e lidando com inconsistências do mundo real.
 
 ## 🛠️ Stack Tecnológica
-* Linguagem: Python
-* Orquestração de Agentes: LangChain & LangGraph (ReAct Agent)
-* Processamento de Dados (OLAP): DuckDB (alto desempenho in-memory)
-* Modelos de IA (LLMs): Google Gemini / Groq (Llama 3) com suporte a múltiplos provedores (Multi-provider failover)
-* Interface Gráfica: Streamlit
-* Gerenciamento de Logs: Documentação automatizada em Markdown (.md)
+- Linguagem: Python
+- Orquestração de Agentes: LangChain & LangGraph (ReAct Agent)
+- Processamento de Dados (OLAP): DuckDB (alto desempenho in-memory)
+- Modelos de IA (LLMs): Google Gemini / Groq (GPT OSS 20B) com suporte a múltiplos provedores (Multi-provider failover)
+- Interface Gráfica: Streamlit
+- Gerenciamento de Logs: Documentação automatizada em Markdown (.md)
 
 ## 📊 Arquitetura e Funcionamento
 1. Entrada Natural: O usuário faz uma pergunta complexa de negócio via painel web.
@@ -31,8 +31,8 @@ Painéis de BI tradicionais são estáticos e limitados a perguntas pré-program
 ## ⚙️ Como Executar o Projeto Localmente
 
 1. Clone o repositório:
-   git clone https://github.com/SEU_USUARIO/NOME_DO_REPO.git
-   cd NOME_DO_REPO
+   git clone https://github.com/Lcapp29/agent-ai-ecommerce.git
+   cd agent-ai-ecommerce
 
 2. Crie e ative o ambiente virtual:
    python -m venv venv
